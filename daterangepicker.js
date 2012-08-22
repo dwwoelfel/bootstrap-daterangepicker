@@ -138,13 +138,13 @@
       }
     },
 
-    notify: function() {
+    notify: function(description) {
       this.updateView();
 
       if (this.element.is('input')) {
         this.element.val(this.startDate.toString(this.format) + ' - ' + this.endDate.toString(this.format));
       }
-      this.cb(this.startDate, this.endDate);
+      this.cb(this.startDate, this.endDate, description);
     },
 
     move: function() {
@@ -205,7 +205,7 @@
         this.rightCalendar.month.set({month: this.endDate.getMonth(), year: this.endDate.getFullYear()});
         this.updateCalendars();
 
-        this.notify();
+        this.notify(label);
         this.container.find('.calendar').hide();
         this.hide();
       }
