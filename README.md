@@ -1,3 +1,10 @@
+# Differences between this fork and the original
+
+The custom range label was changed from "Custom range" to "Custom".
+
+The callback passes label as its third parameter.
+
+
 # Date Range Picker for Twitter Bootstrap
 
 ![Improvely.com](http://www.dangrossman.info/wp-content/themes/2012/daterangepicker.png)
