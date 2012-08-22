@@ -66,7 +66,7 @@
         for (var range in this.ranges) {
           list += '<li>' + range + '</li>';
         }
-        list += '<li>Custom Range</li>';
+        list += '<li>Custom</li>';
         list += '</ul>';
         this.container.find('.ranges').prepend(list);
 
@@ -182,7 +182,7 @@
 
     enterRange: function(e) {
       var label = e.target.innerHTML;
-      if (label == "Custom Range") {
+      if (label == "Custom") {
         this.updateView();
       } else {
         var dates = this.ranges[label];
@@ -193,7 +193,7 @@
 
     clickRange: function(e) {
       var label = e.target.innerHTML;
-      if (label == "Custom Range") {
+      if (label == "Custom") {
         this.container.find('.calendar').show();
       } else {
         var dates = this.ranges[label];
